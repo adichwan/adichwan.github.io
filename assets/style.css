@@ -1,0 +1,260 @@
+* {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+ }
+ 
+ a {
+   text-decoration: none;
+ }
+ 
+ .clear {
+   clear: left;
+ }
+ 
+ .container {
+   max-width: 1170px;
+   width: 100%;
+   padding: 0 15px;
+   margin: 0 auto;
+ }
+ 
+ .top-wrapper {
+   padding: 250px 0 100px 0;
+   background-image: url(sneaker-shoe-svgrepo-com.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: rgb(108, 66, 206);
+   -webkit-border-bottom-right-radius: 200px;
+   -moz-border-radius-bottomright: 200px;
+   border-bottom-right-radius: 200px;
+   color: white;
+   text-align: center;
+ }
+ 
+ .top-wrapper h1 {
+   opacity: 0.7;
+   font-size: 45px;
+   letter-spacing: 5px;
+   margin-bottom: 10px;
+ }
+ 
+ .top-wrapper p {
+   opacity: 0.7;
+   margin-bottom: 3px;
+ }
+ 
+ .btn-wrapper {
+   text-align: center;
+   margin: 40px 0;
+ }
+
+ .btn {
+   padding: 12px 24px;
+   background-color: #55acee;
+   color: white;
+   display: inline-block;
+   border-radius: 25px;
+   text-align: center;
+   transition: all 0.5s;
+ }
+ 
+ .btn:hover {
+   opacity: 1;
+   background-color: coral;
+ }
+ 
+ header {
+   height: 65px;
+   width: 100%;
+   background-color: rgb(108, 66, 206);
+   position :fixed;
+   top: 0;
+   z-index: 10;
+ }
+ 
+ .header-left {
+   float: left;
+   color: #eee;
+   font-family: 'Blinker', sans-serif;
+ }
+
+ .header-left h1 {
+   letter-spacing: -7px;
+   margin-top: 10px;
+ }
+ 
+ .header-right {
+   float: right;
+   margin-right: -25px;
+ }
+ 
+ .header-right a {
+   line-height: 65px;
+   padding: 0 25px;
+   color: white;
+   display: block;
+   float: left;
+   transition: all 0.5s;
+ }
+ 
+ .header-right a:hover {
+   background-color: rgba(255, 255, 255, 0.3);
+ }
+ 
+ .menu-icon {
+   color: white;
+   float: right;
+   font-size: 25px;
+   padding: 21px 0;
+   display: none;
+ }
+ 
+ .product-wrapper {
+   padding-bottom: 80px;
+   padding-left: 5%;
+   padding-right: 5%;
+   background-color: #f7f7f7;
+   text-align: center;
+ }
+ 
+ .heading {
+   padding-top: 80px;
+   padding-bottom: 50px;
+   color: #5f5d60;
+ }
+ 
+ .heading h2 {
+   font-weight: bold;
+ }
+ 
+ .product {
+   float: left;
+   width: 25%;
+ }
+ 
+ .product-icon {
+   position: relative;
+ }
+
+ .product-icon img {
+   width: 75px;
+ }
+ 
+ .text-contents {
+   width: 80%;
+   display: inline-block;
+   margin-top: 15px;
+   font-size: 15px;
+   color: #b3aeb5;
+ }
+ 
+ .heading h3 {
+   font-weight: normal;
+ }
+ 
+ .message-wrapper {
+   border-bottom: 1px solid #eee;
+   padding-bottom: 80px;
+   text-align: center;
+ }
+ 
+ .message {
+   padding: 15px 40px;
+   background-color: #5dca88;
+   cursor: pointer;
+ }
+ 
+ .message:active {
+   position: relative;
+   top: 7px;
+   box-shadow: none;
+ }
+ 
+ .contact {
+  display: flex;
+  width: 100%;
+ }
+
+ .contact-left {
+   width: 60%;
+   padding: 40px 40px 40px 100px;
+ }
+
+ .contact-right {
+   width: 40%;
+   padding-top: 40px;
+ }
+
+ .contact-right img {
+   width: 50%;
+ }
+
+ footer p {
+   color: #b3aeb5;
+   font-size: 12px;
+ }
+ 
+ footer {
+   padding-top: 30px;
+   padding-bottom: 20px;
+   background-color: black;
+ }
+
+ /* =================================== */
+
+ /* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  
+  .heading h2 {
+    font-size: 20px;
+  }
+  
+  .product {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+  .top-wrapper h1 {
+   font-size: 24px;
+   line-height: 36px;
+  }
+  
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .header-right {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .facebook {
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    width: 90%;
+  }
+  
+  .product {
+    width: 100%;
+  }
+  
+  footer {
+    text-align: center;
+  }
+}
